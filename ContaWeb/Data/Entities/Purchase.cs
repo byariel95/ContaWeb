@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ContaWeb.Data
+namespace ContaWeb.Data.Entities
 {
-    public class DataContext
+    public class Purchase
     {
-
     }
 }
