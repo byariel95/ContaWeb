@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
+﻿
 namespace ContaWeb.Data
 {
-    public class DataContext
+    using Entities;
+    using Microsoft.EntityFrameworkCore;
+  
+    public class DataContext: DbContext
     {
+       
+        public DbSet<Purchase> Purchases { get; set; }
+        
+
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
+        {
+            
+        }
 
     }
 }
