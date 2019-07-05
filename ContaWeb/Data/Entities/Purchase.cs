@@ -23,11 +23,6 @@ namespace ContaWeb.Data.Entities
         [Display(Name = "Tipo De Documento")]
         public string Type { get; set; }
 
-
-        [MaxLength(15, ErrorMessage = "El Campo {0} Solo Puede Contener {1} Caracteres")]
-        [Display(Name = "NIT")]
-        public string Nit { get; set; }
-
         [Required]
         [Display(Name = "Valor Total")]
         [DisplayFormat(DataFormatString = "{0:C2}", ApplyFormatInEditMode = false)]
@@ -42,5 +37,15 @@ namespace ContaWeb.Data.Entities
         [Display(Name = "Credito Fiscal")]
         [DisplayFormat(DataFormatString = "{0:C2}", ApplyFormatInEditMode = false)]
         public decimal IVA { get; set; }
+
+        public Provider Provider { get; set; }
+
+        public Client Client { get; set; }
+
+        public User User { get; set; }
+
+
+
+
     }
 }
