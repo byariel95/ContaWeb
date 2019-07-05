@@ -14,7 +14,7 @@ namespace ContaWeb.Data.Entities
         [Required]
         [Display(Name = "Mes")]
         public string Month { get; set; }
-     
+
         [Required]
         [MaxLength(5)]
         [Display(Name = "Año")]
@@ -22,7 +22,6 @@ namespace ContaWeb.Data.Entities
 
         [MaxLength(6)]
         public string Folio { get; set; }
-
 
         public IEnumerable<PurchaseDetail> Totals { get; set; }
 
